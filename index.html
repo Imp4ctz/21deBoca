@@ -17,11 +17,11 @@
         </div>
         <div>
             <div id="divPVM">
-                <button onclick="" id="botaoPVM" type="button" class="btn btn-dark btn-lg btn-block">PVM</button>
+                <button onclick="mostrarPVM()" id="botaoPVM" type="button" class="btn btn-dark btn-lg btn-block">JOGADOR VS MÁQUINA</button>
                 <br>
                 <br> 
-                <div class="row">
-                    <div class="col">
+                <div id="initPVM" class="row pvm">
+                    <div id="a"class="col">
                         <h1>Jogador</h1>
                         <br>
                         <div class="btn-group mr-2" role="group" aria-label="First group">
@@ -30,41 +30,48 @@
                             <button onclick="maisNumero(3)" id="btn3pvm"type="button" class="btn btn-secondary">+3</button>
                         </div>
                     </div>
-                    <div role="painel" class="col placar">
+                    <div id="b"role="painel" class="col placar">
                         <h1 class="">NÚMERO</h1><br>
-                        <p id="numeroAnterior"></p>
+                        <p>Escolha do jogador: </p>
+                        <p id="numeroJogador"></p>
+                        <p>Escolha da máquina: </p>
+                        <p id="numeroMaquina"></p>
                         <h1 id="pontos">0</h1>
                     </div>
-                    <div class="col"></div>
+                    <div id="c"class="col"></div>
                 </div>
             </div>
             <br>
             <br>
             <div id="divPVP">
-                <button id="botaoPVP" type="button" class="btn btn-dark btn-lg btn-block">PVP</button>
+                <button onclick="mostrarPVP()" id="botaoPVP" type="button" class="btn btn-dark btn-lg btn-block">JOGADOR VS JOGADOR</button>
                 <br>
-                <div class="row">
-                    <div class="col">
+                <div id="initPVP" class="row">
+                    <div id="d" class="col">
                         <h1>Jogador 1</h1>
                         <br>
                         <div class="btn-group mr-2" role="group" aria-label="First group">
-                            <button id="btn1pvp1" type="button" class="btn btn-secondary">+1</button>
-                            <button id="btn2pvp1" type="button" class="btn btn-secondary">+2</button>
-                            <button id="btn3pvp1" type="button" class="btn btn-secondary">+3</button>
+                            <button onclick="maisNumero1(1)" id="btn1pvp1" type="button" class="btn btn-secondary">+1</button>
+                            <button onclick="maisNumero1(2)" id="btn2pvp1" type="button" class="btn btn-secondary">+2</button>
+                            <button onclick="maisNumero1(3)" id="btn3pvp1" type="button" class="btn btn-secondary">+3</button>
                         </div>
                     </div>
-                    <div role="painel" class="col placar">
+                    <div id="e" role="painel" class="col placar">
                         <h1 class="">NÚMERO</h1><br>
-                        <h1 id="pontos">0</h1>
+                        <p>Escolha do jogador 1: </p>
+                        <p id="numeroJogador1"></p>
+                        <p>Escolha da jogador 2: </p>
+                        <p id="numeroJogador2"></p>
+                        <h1 id="pontos1">0</h1>
 
                     </div>
-                    <div class="col jogador2">
+                    <div id="f" class="col jogador2">
                         <h1 class="">Jogador 2</h1>
                         <br>
                         <div class="btn-group mr-2" role="group" aria-label="First group">
-                            <button id="btn1pvp2" type="button" class="btn btn-secondary">+1</button>
-                            <button id="btn2pvp2" type="button" class="btn btn-secondary">+2</button>
-                            <button id="btn3pvp2" type="button" class="btn btn-secondary">+3</button>
+                            <button onclick="maisNumero2(1)" id="btn1pvp2" type="button" class="btn btn-secondary">+1</button>
+                            <button onclick="maisNumero2(2)" id="btn2pvp2" type="button" class="btn btn-secondary">+2</button>
+                            <button onclick="maisNumero2(3)" id="btn3pvp2" type="button" class="btn btn-secondary">+3</button>
                         </div>
                     </div>
                 </div>

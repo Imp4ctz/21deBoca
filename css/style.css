@@ -1,9 +1,9 @@
 .jogador2{
     text-align: right;
 }
-/*#initPVM{
-    display: none;
-}*/
 .placar{
     text-align: center;
+}
+.ranking{
+    margin-top: 20px;
 }

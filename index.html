@@ -12,7 +12,11 @@
 <body>
     <div class="container">
         <div>
-            <h1>21 DE BOCA</h1>
+            <div class="row">
+                <div class="col">
+                    <h1>21 DE BOCA</h1>
+                </div>
+            </div>
             <P>Comece escolhendo se o jogo será PVM(Player Vs Machine) ou PVP(Player Vs Player)</P>
         </div>
         <div>
@@ -74,6 +78,31 @@
                             <button onclick="maisNumero2(3)" id="btn3pvp2" type="button" class="btn btn-secondary">+3</button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div>                
+                <!--<button id="rank" class="ranking btn btn-dark">Ranking</button>-->
+                <div>
+                    <table class="table table-dark indexTabela">
+                        <tr>
+                            <td><p>Jogador</p></td><td><p>Vitórias</p></td><td><p>Derrotas</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Jogador 1</p></td>
+                            <td><p id="Jogador1Vitoria">0</p></td>
+                            <td><p id="Jogador1Derrota">0</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Jogador 2</p></td>
+                            <td><p id="Jogador2Vitoria">0</p></td>
+                            <td><p id="Jogador2Derrota">0</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Máquina</p></td>
+                            <td><p id="MaquinaVitoria">0</p></td>
+                            <td><p id="MaquinaDerrota">0</p></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
